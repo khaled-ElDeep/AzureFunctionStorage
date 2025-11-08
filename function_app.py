@@ -17,7 +17,7 @@ def http_trigger_github(req: func.HttpRequest) -> func.HttpResponse:
             name = req_body.get('name')
 
     if name:
-        return func.HttpResponse(f"run with name, {name}. This HTTP triggered function executed successfully.")
+        return func.HttpResponse(f"Hello {name} From Github")
     else:
         return func.HttpResponse(
              "This HTTP triggered function executed normaly. Pass a name in the query string or in the request body for a personalized response.",
