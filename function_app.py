@@ -3,7 +3,7 @@ import logging
 from azure.storage.blob import BlockBlobService
 
 app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
-ACCOUNT_NAME = "rgfra9640"
+ACCOUNT_NAME = "dlstorage231"
 SAS_TOKEN='sv=2024-11-04&ss=bfqt&srt=c&sp=rwdlacupyx&se=2025-11-08T22:16:33Z&st=2025-11-08T14:01:33Z&spr=https&sig=YB5I99URcKaGLHLHUgy13dLsIzD5mon6q64SqTB8UeQ%3D'
 @app.route(route="http_trigger_github")
 def http_trigger_github(req: func.HttpRequest) -> func.HttpResponse:
